@@ -21,13 +21,16 @@ namespace _01_Challenge
             bool keepRunning = true;
             while (keepRunning)
             {
-                Console.WriteLine("Please select an option: \n" +
-                    "\n1. Add Menu Item\n" +
-                    "2. Show Full Menu\n" +
-                    "3. Veiw Menu Item by Number\n" +
-                    "4. Update Menu Item\n" +
-                    "5. Delete Menu Item\n" +
-                    "6. Exit");
+                Console.WriteLine("\n\tPress any Key to Continue");
+                Console.ReadKey();
+                Console.Clear();
+                Console.WriteLine("\n\tPlease select an option: \n" +
+                    "\n\t1. Add Menu Item\n" +
+                    "\t2. Show Full Menu\n" +
+                    "\t3. Veiw Menu Item by Number\n" +
+                    "\t4. Update Menu Item\n" +
+                    "\t5. Delete Menu Item\n" +
+                    "\t6. Exit");
 
                 string input = Console.ReadLine();
 
@@ -58,7 +61,7 @@ namespace _01_Challenge
                         keepRunning = false;
                         break;
                     default:
-                        Console.WriteLine("Please enter a valid number");
+                        Console.WriteLine("\tPlease enter a valid number");
                         break;
 
                 }
@@ -70,30 +73,31 @@ namespace _01_Challenge
             Console.Clear();
             MenuItem newItem = new MenuItem();
             //number
-            Console.WriteLine("Enter Menu Number:");
+            Console.WriteLine("\n\tEnter Menu Number:");
             newItem.MealNumber = Convert.ToInt32(Console.ReadLine());
             //name
-            Console.WriteLine("Enter Meal Name:");
+            Console.WriteLine("\tEnter Meal Name:");
             newItem.MealName = (Console.ReadLine());
             //descrip
-            Console.WriteLine("Enter Meal Desription:");
+            Console.WriteLine("\tEnter Meal Desription:");
             newItem.MealDescription = (Console.ReadLine());
             //ingr
-            Console.WriteLine("Enter Meal Ingredients:");
+            Console.WriteLine("\tEnter Meal Ingredients:");
             newItem.Ingredients = (Console.ReadLine());
             //price
-            Console.WriteLine("Enter Meal Price:");
+            Console.WriteLine("\tEnter Meal Price:");
             newItem.Price = Convert.ToDouble(Console.ReadLine());
 
             bool wasAddedCorrectly = _repo.AddMenuItem(newItem);
             if (wasAddedCorrectly)
             {
-                Console.WriteLine("The Meal was added");
+                Console.WriteLine("\tThe Meal was added");
             }
             else
             {
-                Console.WriteLine("Could not add the Meal.");
+                Console.WriteLine("\tCould not add the Meal.");
             }
+            //Console.ReadKey();
 
         }
 
@@ -104,13 +108,16 @@ namespace _01_Challenge
             foreach (MenuItem item in fullMenu)
             {
 
-                Console.WriteLine($"Menu Number: #{item.MealNumber}\n" +
-                    $"Meal Name: {item.MealName}\n" +
-                    $"Meal Descritption: {item.MealDescription}\n" +
-                    $"Ingredients: {item.Ingredients}\n" +
-                    $"Price: ${item.Price}");
+                Console.WriteLine($"\n\tMenu Number: #{item.MealNumber}\n" +
+                    $"\tMeal Name: {item.MealName}\n" +
+                    $"\tMeal Descritption: {item.MealDescription}\n" +
+                    $"\tIngredients: {item.Ingredients}\n" +
+                    $"\tPrice: ${item.Price}\n" +
+                    $"\n.........................................................................\n");
 
             }
+            //Console.ReadKey();
+
 
         }
 
@@ -120,8 +127,9 @@ namespace _01_Challenge
             foreach (MenuItem item in fullMenu)
             {
 
-                Console.WriteLine($"Menu Number: #{item.MealNumber}\n" +
-                    $"Meal Name: {item.MealName}\n");
+                Console.WriteLine($"\tMenu Number: #{item.MealNumber}\n" +
+                    $"\tMeal Name: {item.MealName}\n" +
+                    $"\n.........................................................................\n");
             }
 
         }
@@ -132,20 +140,21 @@ namespace _01_Challenge
             Console.Clear();
             ShowMenuItemNameandNumber();
 
-            Console.WriteLine("Enter Menu Number:");
+            Console.WriteLine("\n\tEnter Menu Number:");
             MenuItem item = _repo.GetMenuItemByNumber(Convert.ToInt32(Console.ReadLine()));
 
             if (item != null)
             {
-                Console.WriteLine($"Menu Number: #{item.MealNumber}\n" +
-                     $"Meal Name: {item.MealName}\n" +
-                     $"Meal Descritption: {item.MealDescription}\n" +
-                     $"Ingredients: {item.Ingredients}\n" +
-                     $"Price: ${item.Price}");
+                Console.WriteLine($"\n\tMenu Number: #{item.MealNumber}\n" +
+                     $"\tMeal Name: {item.MealName}\n" +
+                     $"\tMeal Descritption: {item.MealDescription}\n" +
+                     $"\tIngredients: {item.Ingredients}\n" +
+                     $"\tPrice: ${item.Price}\n" +
+                    $"\n.......................................................................\n");
             }
             else
             {
-                Console.WriteLine("Can not find that Menu Item.");
+                Console.WriteLine("\tCan not find that Menu Item.");
             }
 
         }
@@ -154,34 +163,34 @@ namespace _01_Challenge
         {
             Console.Clear();
             ShowMenuItemNameandNumber();
-            Console.WriteLine("Enter the number of the Menu Item you would like to update:");
+            Console.WriteLine("\n\tEnter the number of the Menu Item you would like to update:");
             int oldItem = Convert.ToInt32(Console.ReadLine());
 
             MenuItem newItem = new MenuItem();
             //number
-            Console.WriteLine("Enter Menu Number:");
+            Console.WriteLine("\tEnter Menu Number:");
             newItem.MealNumber = Convert.ToInt32(Console.ReadLine());
             //name
-            Console.WriteLine("Enter Meal Name:");
+            Console.WriteLine("\tEnter Meal Name:");
             newItem.MealName = (Console.ReadLine());
             //descrip
-            Console.WriteLine("Enter Meal Desription:");
+            Console.WriteLine("\tEnter Meal Desription:");
             newItem.MealDescription = (Console.ReadLine());
             //ingr
-            Console.WriteLine("Enter Meal Ingredients:");
+            Console.WriteLine("\tEnter Meal Ingredients:");
             newItem.Ingredients = (Console.ReadLine());
             //price
-            Console.WriteLine("Enter Meal Price:");
+            Console.WriteLine("\tEnter Meal Price:");
             newItem.Price = Convert.ToDouble(Console.ReadLine());
 
             bool wasAddedCorrectly = _repo.UpdateMenuItemByNumber(oldItem, newItem);
             if (wasAddedCorrectly)
             {
-                Console.WriteLine("The Meal was updated");
+                Console.WriteLine("\tThe Meal was updated");
             }
             else
             {
-                Console.WriteLine("Could not update the Meal.");
+                Console.WriteLine("\tCould not update the Meal.");
             }
         }
 
@@ -190,7 +199,7 @@ namespace _01_Challenge
             Console.Clear();
            ShowMenuItemNameandNumber();
 
-            Console.WriteLine("Enter Menu number of the meal you would like to delete:");
+            Console.WriteLine("\n\tEnter Menu number of the meal you would like to delete:");
             
             int itemDelete = Convert.ToInt32(Console.ReadLine());
 
@@ -198,11 +207,11 @@ namespace _01_Challenge
 
             if (wasDeleted)
             {
-                Console.WriteLine("Menu Item was deleted");
+                Console.WriteLine("\tMenu Item was deleted");
             }
             else
             {
-                Console.WriteLine("Could not delete Menu Item");
+                Console.WriteLine("\tCould not delete Menu Item");
             }
         }
 

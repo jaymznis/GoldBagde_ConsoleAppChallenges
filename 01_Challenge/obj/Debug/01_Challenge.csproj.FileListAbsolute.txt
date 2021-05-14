@@ -1,0 +1,10 @@
+C:\Users\jaymz\OneDrive\Documents\ElevenFiftyProjects\GoldBadgeConsoleAppChallenges\01_Challenge\bin\Debug\01_Challenge.exe.config
+C:\Users\jaymz\OneDrive\Documents\ElevenFiftyProjects\GoldBadgeConsoleAppChallenges\01_Challenge\bin\Debug\01_Challenge.exe
+C:\Users\jaymz\OneDrive\Documents\ElevenFiftyProjects\GoldBadgeConsoleAppChallenges\01_Challenge\bin\Debug\01_Challenge.pdb
+C:\Users\jaymz\OneDrive\Documents\ElevenFiftyProjects\GoldBadgeConsoleAppChallenges\01_Challenge\bin\Debug\01_ChallengeRepository.dll
+C:\Users\jaymz\OneDrive\Documents\ElevenFiftyProjects\GoldBadgeConsoleAppChallenges\01_Challenge\bin\Debug\01_ChallengeRepository.pdb
+C:\Users\jaymz\OneDrive\Documents\ElevenFiftyProjects\GoldBadgeConsoleAppChallenges\01_Challenge\obj\Debug\01_Challenge.csprojAssemblyReference.cache
+C:\Users\jaymz\OneDrive\Documents\ElevenFiftyProjects\GoldBadgeConsoleAppChallenges\01_Challenge\obj\Debug\01_Challenge.csproj.CoreCompileInputs.cache
+C:\Users\jaymz\OneDrive\Documents\ElevenFiftyProjects\GoldBadgeConsoleAppChallenges\01_Challenge\obj\Debug\01_Challenge.csproj.CopyComplete
+C:\Users\jaymz\OneDrive\Documents\ElevenFiftyProjects\GoldBadgeConsoleAppChallenges\01_Challenge\obj\Debug\01_Challenge.exe
+C:\Users\jaymz\OneDrive\Documents\ElevenFiftyProjects\GoldBadgeConsoleAppChallenges\01_Challenge\obj\Debug\01_Challenge.pdb
