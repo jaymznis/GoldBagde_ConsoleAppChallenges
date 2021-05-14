@@ -7,7 +7,7 @@
     <ProjectGuid>{2B4E1E3F-37D3-4322-97AE-833FF872CB1A}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>_01_Challenge</RootNamespace>
-    <AssemblyName>_01_Challenge</AssemblyName>
+    <AssemblyName>01_Challenge</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ProgramUI.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

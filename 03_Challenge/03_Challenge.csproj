@@ -7,7 +7,7 @@
     <ProjectGuid>{19AEECD3-B7BD-41AF-BAE8-64B9B2C0E2C7}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>_03_Challenge</RootNamespace>
-    <AssemblyName>_03_Challenge</AssemblyName>
+    <AssemblyName>03_Challenge</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

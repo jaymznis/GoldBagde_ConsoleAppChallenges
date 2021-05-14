@@ -3,7 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoldBadgeConsoleAppChallenges", "GoldBadgeConsoleAppChallenges\GoldBadgeConsoleAppChallenges.csproj", "{79916DE1-7DEF-4292-B113-B90B59C7A42C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_Challenge", "01_Challenge\01_Challenge.csproj", "{2B4E1E3F-37D3-4322-97AE-833FF872CB1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_Challenge", "02_Challenge\02_Challenge.csproj", "{2ACDFFDD-6A2F-457F-806C-CD5B7A0AD48F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_Challenge", "03_Challenge\03_Challenge.csproj", "{19AEECD3-B7BD-41AF-BAE8-64B9B2C0E2C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_ChallengeRepository", "01_ChallengeRepository\01_ChallengeRepository.csproj", "{484C0502-A3C0-449C-BA48-1AB6EDD554BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_ChallengeRepository", "02_ChallengeRepository\02_ChallengeRepository.csproj", "{37F78663-7AD9-451D-B3BA-E62910FB11BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_ChallengeRepository", "03_ChallengeRepository\03_ChallengeRepository.csproj", "{02226A3F-5062-49C0-A03A-173D953CBDBA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +21,30 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{79916DE1-7DEF-4292-B113-B90B59C7A42C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{79916DE1-7DEF-4292-B113-B90B59C7A42C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{79916DE1-7DEF-4292-B113-B90B59C7A42C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{79916DE1-7DEF-4292-B113-B90B59C7A42C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B4E1E3F-37D3-4322-97AE-833FF872CB1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B4E1E3F-37D3-4322-97AE-833FF872CB1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B4E1E3F-37D3-4322-97AE-833FF872CB1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B4E1E3F-37D3-4322-97AE-833FF872CB1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2ACDFFDD-6A2F-457F-806C-CD5B7A0AD48F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2ACDFFDD-6A2F-457F-806C-CD5B7A0AD48F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2ACDFFDD-6A2F-457F-806C-CD5B7A0AD48F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2ACDFFDD-6A2F-457F-806C-CD5B7A0AD48F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19AEECD3-B7BD-41AF-BAE8-64B9B2C0E2C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19AEECD3-B7BD-41AF-BAE8-64B9B2C0E2C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19AEECD3-B7BD-41AF-BAE8-64B9B2C0E2C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19AEECD3-B7BD-41AF-BAE8-64B9B2C0E2C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{484C0502-A3C0-449C-BA48-1AB6EDD554BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{484C0502-A3C0-449C-BA48-1AB6EDD554BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{484C0502-A3C0-449C-BA48-1AB6EDD554BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{484C0502-A3C0-449C-BA48-1AB6EDD554BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37F78663-7AD9-451D-B3BA-E62910FB11BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37F78663-7AD9-451D-B3BA-E62910FB11BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37F78663-7AD9-451D-B3BA-E62910FB11BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37F78663-7AD9-451D-B3BA-E62910FB11BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02226A3F-5062-49C0-A03A-173D953CBDBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02226A3F-5062-49C0-A03A-173D953CBDBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02226A3F-5062-49C0-A03A-173D953CBDBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02226A3F-5062-49C0-A03A-173D953CBDBA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
