@@ -14,6 +14,7 @@ namespace _01_ChallengeRepository
         public string Ingredients{ get; set; }
         public double Price { get; set; }
 
+        public MenuItem(){ }
         public MenuItem(int mealNumber, string mealName, string mealDescription, string ingredients, double price)
         {
             MealNumber = mealNumber;
