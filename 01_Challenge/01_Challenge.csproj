@@ -43,12 +43,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ProgramUI.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="MenuProgramUI.cs" />
+    <Compile Include="MenuProgram.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\01_ChallengeRepository\01_ChallengeRepository.csproj">
+      <Project>{484C0502-A3C0-449C-BA48-1AB6EDD554BA}</Project>
+      <Name>01_ChallengeRepository</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
