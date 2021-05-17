@@ -53,7 +53,7 @@ namespace _02_Challenge
                         break;
                     case "4":
                     case "four":
-                        //LookUpClaim();
+                        LookUpClaim();
                         break;
                     case "5":
                     case "five":
@@ -82,6 +82,7 @@ namespace _02_Challenge
                 Console.WriteLine($"\t {claim.ClaimID} \t\t {claim.Type} \t\t {claim.Description} \t\t {claim.Amount} \t\t {claim.DateOfAccident} \t\t {claim.DateOfClaim} \t\t {claim.IsValid}\n");
             }
         }
+
         private void NewClaim()
         {
             Console.Clear();
@@ -174,6 +175,24 @@ namespace _02_Challenge
                 Console.WriteLine("\n\t Claim could not be added");
             }
         }
+
+        private void LookUpClaim()
+        {//add method to show claim number and date of claim
+            Console.Clear();
+
+            Console.Write("\n\t Enter Claim ID#:");
+            Claims claim = _repo.GetClaimsByID(Convert.ToInt32(Console.ReadLine()));
+
+            if (claim != null)
+            {
+                Console.WriteLine($"\t {claim.ClaimID} \t\t {claim.Type} \t\t {claim.Description} \t\t {claim.Amount} \t\t {claim.DateOfAccident} \t\t {claim.DateOfClaim} \t\t {claim.IsValid}\n");
+            }
+            else
+            {
+                Console.WriteLine("\n\t Can not find Claim");
+            }
+        }
+
         private void SeedContent()
         {
             Claims c1 = new Claims(1, ClaimType.Car, "Car accident on 465", 400, new DateTime(2018, 04, 25), new DateTime(2018, 04, 27));
