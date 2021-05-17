@@ -34,7 +34,7 @@ namespace _01_ChallengeTestMethod
 
         [TestInitialize]
 
-        public void Seed()
+        public void SeedTestMethod()
         {
             _menu = new MenuRepository();
             _item = new MenuItem(1, "Pepperoni Pizza", "Fresh Slice of Pepperoni Pizza", " Pepperoni and Cheese", 3.99);

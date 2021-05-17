@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace _02_Challenge
 {
-    class Program
+    class ClaimsProgram
     {
         static void Main(string[] args)
         {
+            ClaimsProgramUI ui = new ClaimsProgramUI();
+            ui.Run();
         }
     }
 }
