@@ -18,6 +18,8 @@ namespace _01_Challenge
         }
         private void MenuAccess()
         {
+            Console.WriteLine("\n\tWelcome to Menu Maker 3000!");
+    
             bool keepRunning = true;
             while (keepRunning)
             {
