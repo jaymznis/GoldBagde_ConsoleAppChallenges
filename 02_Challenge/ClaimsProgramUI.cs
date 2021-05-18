@@ -175,6 +175,7 @@ namespace _02_Challenge
                 case "1":
                 case "one":
                 case "car":
+                
                     newClaim.Type = ClaimType.Car;
                     break;
                 case "2":
