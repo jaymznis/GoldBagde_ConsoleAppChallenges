@@ -82,5 +82,32 @@ namespace _02_ChallengeRepository
                 } 
             }
         }
+
+        public int ClaimsCount()
+        {
+            int count = _claims.Count;
+            return count;
+        }
+
+        public Claims ClaimsPeek()
+        {
+            if (_claims.Count != 0)
+            {
+                return _claims.Peek();
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        public bool DequeueClaims()
+        {
+            int claims = _claims.Count;
+
+            _claims.Dequeue();
+            bool wasDequeued = (_claims.Count < claims) ? true : false;
+            return wasDequeued;
+        }
     }
 }
