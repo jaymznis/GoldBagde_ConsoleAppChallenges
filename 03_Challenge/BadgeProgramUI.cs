@@ -64,7 +64,18 @@ namespace _03_Challenge
                 }
             }
         }
-
+        private void AddBadge()
+        {
+            Badge bagde = new Badge();
+            Console.Clear();
+            Console.Write($"\n\t What is the number on the badge? # ");
+            bagde.BadgeID = Convert.ToInt32(Console.ReadLine());
+            bool addMoreDoors = true;
+            while (addMoreDoors)
+            {
+                Console.WriteLine($"\n\t );
+}
+        }
 
         private void UpdateBadge()
         {
@@ -93,7 +104,7 @@ namespace _03_Challenge
                     string doorToRemove = Console.ReadLine();
                     Enum.TryParse(doorToRemove, out DoorAccess removeDoor);
                     _repo.RemoveDoorAccess(badgeNum, removeDoor);
-                    Console.WriteLine($"\n\t Badge #{badge.BadgeID} now has access to doors {badge.DoorAccess}.");
+                    Console.WriteLine($"\n\t Badge #{badge.BadgeID} now has access to doors "); ShowDoors(badge);
                     Console.ReadKey();
                     break;
                 case "2":
@@ -119,12 +130,18 @@ namespace _03_Challenge
         private void ListAllBadges()
         {
             Console.Clear();
-            Dictionary<int,Badge> badges = _repo.GetFullDictionary();
+            Dictionary<int, Badge> badges = _repo.GetFullDictionary();
 
-            foreach(Badge badge in badges.Values)
+            foreach (Badge badge in badges.Values)
             {
                 Console.WriteLine($"\n\t Badge #{badge.BadgeID}\n" +
-                    $"\t Door Access {badge.DoorAccess}");
+                    $"\n\t Door Access:\n");
+                foreach (DoorAccess item in badge.DoorAccess)
+                {
+                    Console.Write($"\t\t\t Door {item}");
+                    Console.WriteLine("\n");
+
+                }
             }
 
         }
@@ -150,5 +167,16 @@ namespace _03_Challenge
             _repo.AddBadge(bTwo);
 
         }
+        public void ShowDoors(Badge badge)
+        {
+
+            foreach (DoorAccess item in badge.DoorAccess)
+            {
+                Console.Write($"\t\t\t Door {item}");
+                Console.WriteLine("\n");
+
+            }
+        }
+
     }
 }
