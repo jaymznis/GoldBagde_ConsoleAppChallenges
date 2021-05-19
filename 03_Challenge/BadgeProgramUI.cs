@@ -51,7 +51,7 @@ namespace _03_Challenge
                         break;
                     case "4":
                     case "four":
-                        //DeleteBadge();
+                        DeleteBadge();
                         break;
                     case "5":
                     case "five":
@@ -75,7 +75,7 @@ namespace _03_Challenge
             while (addMoreDoors)
             {
                 Console.Clear();
-                Console.WriteLine($"\n\t Please choose a door to grant access\n" +
+                Console.Write($"\n\t Please choose a door to grant access\n" +
                     $"\n\t\t1. A1\n" +
                     $"\t\t2. A2\n" +
                     $"\t\t3. A3\n" +
@@ -126,7 +126,7 @@ namespace _03_Challenge
             Console.WriteLine($"\n\t Badge {badge.BadgeID} has been created and has access to these Doors:");
             ShowDoors(badge);
             Console.ReadKey();
-            
+
         }
 
 
@@ -146,6 +146,7 @@ namespace _03_Challenge
             bool updateDoors = true;
             while (updateDoors)
             {
+                Console.Clear();
                 Console.WriteLine($"\n\t What would you like to do?\n" +
                     $"\n\t 1. Remove a door\n" +
                     $"\t 2. Add a Door\n" +
@@ -160,12 +161,13 @@ namespace _03_Challenge
                     case "one":
                     case "remove":
                     case "remove a door":
+                        Console.Clear();
                         Console.WriteLine($"\n\t Which door would you like to remove?\n" +
                             $"\n\t");
                         ShowDoors(badge);
                         Console.Write("\n\t Door: ");
                         string doorToRemove = Console.ReadLine();
-                        Enum.TryParse(doorToRemove, out DoorAccess removeDoor);
+                        Enum.TryParse(doorToRemove.ToUpper(), out DoorAccess removeDoor);
                         _repo.RemoveDoorAccess(badgeNum, removeDoor);
                         Console.WriteLine($"\n\t Badge #{badge.BadgeID} now has access to doors "); ShowDoors(badge);
                         Console.ReadKey();
@@ -174,30 +176,110 @@ namespace _03_Challenge
                     case "two":
                     case "add":
                     case "add a door":
-                        Console.WriteLine($"\n\t Please choose a door to grant access\n" +
-                         $"\n\t\t1. A1\n" +
-                         $"\t\t2. A2\n" +
-                         $"\t\t3. A3\n" +
-                         $"\t\t4. A4\n" +
-                         $"\t\t5. B1\n" +
-                         $"\t\t6. B2\n" +
-                         $"\t\t7. B3\n" +
-                         $"\t\t8. B4\n" +
-                         $"\n\t # ");
-                        int addDoor = Convert.ToInt32(Console.ReadLine());
-                        _repo.AddDoorAccess(badgeNum, addDoor);
-                        Console.WriteLine($"\n\t Badge #{badge.BadgeID} now has access to doors");
-                        ShowDoors(badge);
-                        Console.ReadKey();
+                        bool addDoorBool = true;
+                        while (addDoorBool)
+                        {
+                            Console.Clear();
+                            Console.WriteLine($"\n\t Badge #{badge.BadgeID} currently has access to doors "); ShowDoors(badge);
+                            Console.Write($"\n\t Please choose a door to grant access\n" +
+                             $"\n\t\t1. A1\n" +
+                             $"\t\t2. A2\n" +
+                             $"\t\t3. A3\n" +
+                             $"\t\t4. A4\n" +
+                             $"\t\t5. B1\n" +
+                             $"\t\t6. B2\n" +
+                             $"\t\t7. B3\n" +
+                             $"\t\t8. B4\n" +
+                             $"\n\t # ");
+                            int addDoor = Convert.ToInt32(Console.ReadLine());
+                            Console.Clear();
+                            if (addDoor <= 8 && addDoor >= 1)
+                            {
+                                _repo.AddDoorAccess(badgeNum, addDoor);
+                                Console.WriteLine($"\n\t Badge #{badge.BadgeID} now has access to doors\n" +
+                                    $"\n\t ");
+                                ShowDoors(badge);
+                                Console.Write($"\n\tWould you like to add another door?\n" +
+                                    $"\n\t y/n ");
+                                string inputThree = Console.ReadLine();
+                                bool yesNo = true;
+                                while (yesNo)
+                                {
+                                    switch (inputThree)
+                                    {
+                                        case "y":
+                                        case "yes":
+                                            yesNo = false;
+                                            break;
+                                        case "n":
+                                        case "no":
+                                            yesNo = false;
+                                            addDoorBool = false;
+                                            break;
+                                        default:
+                                            Console.WriteLine($"\n\t Yes or No?");
+                                            break;
+                                    }
+                                }
+
+                            }
+                            else
+                            {
+                                Console.WriteLine($"\n\t Please choose a door 1-8");
+                            }
+                        }
                         break;
                     case "3":
                     case "three":
                     case "exit":
                     case "main menu":
+                    case "back":
+                    case "back to main menu":
+                        updateDoors = false;
+                        break;
                     default:
                         Console.WriteLine($"\n\t Not a valid option");
                         break;
 
+                }
+            }
+
+        }
+
+        private void DeleteBadge()
+        {
+            Console.Clear();
+            ListBadgeNums();
+            Console.Write("\n\t Enter Badge Number you want to Delete:\n" +
+                "\n\t Badge #: ");
+            string input = Console.ReadLine();
+            int badgeNum = Convert.ToInt32(input);
+            Badge badge = _repo.GetByBadgeNum(badgeNum);
+
+            Console.Write($"\n\t Are you sure you want to Delete Badge #{badge.BadgeID}?\n" +
+                $"\n\t y/n ");
+            string yN = Console.ReadLine();
+            bool yesNo = true;
+            while (yesNo)
+            {
+                switch (yN.ToLower())
+                {
+                    case "y":
+                    case "yes":
+                        _repo.RemoveBadgeFromDic(badge);
+                        Console.Clear();
+                        Console.WriteLine($"\n\t Badge was removed.");
+                        yesNo = false;
+                        break;
+                    case "n":
+                    case "no":
+                        Console.Clear();
+                        Console.WriteLine($"\n\t Badge was not removed.");
+                        yesNo = false;
+                        break;
+                    default:
+                        Console.WriteLine("\n\t Yes or No?");
+                        break;
                 }
             }
 
@@ -210,7 +292,7 @@ namespace _03_Challenge
             foreach (Badge badge in badges.Values)
             {
                 Console.WriteLine($"\n\t Badge #{badge.BadgeID}\n");
-               
+
             }
 
         }

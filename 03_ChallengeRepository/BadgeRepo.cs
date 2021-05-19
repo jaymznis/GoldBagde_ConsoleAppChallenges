@@ -24,6 +24,10 @@ namespace _03_ChallengeRepository
         {
             _accessRepo.Add(badge.BadgeID, badge);
         } 
+        public void RemoveBadgeFromDic(Badge badge)
+        {
+            _accessRepo.Remove(badge.BadgeID);
+        }
 
         public Dictionary<int, Badge> GetFullDictionary()
             {
