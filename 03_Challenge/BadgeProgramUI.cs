@@ -47,7 +47,7 @@ namespace _03_Challenge
                         break;
                     case "3":
                     case "three":
-                        //ListAllBadges();
+                        ListAllBadges();
                         break;
                     case "4":
                     case "four":
@@ -116,19 +116,35 @@ namespace _03_Challenge
 
         }
 
+        private void ListAllBadges()
+        {
+            Console.Clear();
+            Dictionary<int,Badge> badges = _repo.GetFullDictionary();
+
+            foreach(Badge badge in badges.Values)
+            {
+                Console.WriteLine($"\n\t Badge #{badge.BadgeID}\n" +
+                    $"\t Door Access {badge.DoorAccess}");
+            }
+
+        }
         private void SeedContent()
         {
-            List<DoorAccess> listOne = new List<DoorAccess>();
-            listOne.Add(DoorAccess.A1);
-            listOne.Add(DoorAccess.B1);
-            listOne.Add(DoorAccess.B3);
-            List<DoorAccess> listTwo = new List<DoorAccess>();
-            listTwo.Add(DoorAccess.A2);
-            listTwo.Add(DoorAccess.A3);
-            listTwo.Add(DoorAccess.B3);
+            List<DoorAccess> listOne = new List<DoorAccess>
+            {
+                DoorAccess.A1,
+                DoorAccess.B1,
+                DoorAccess.B3
+            };
+            List<DoorAccess> listTwo = new List<DoorAccess>
+            {
+                DoorAccess.A2,
+                DoorAccess.A3,
+                DoorAccess.B3
+            };
 
             Badge bOne = new Badge(1234, listOne);
-            Badge bTwo = new Badge(2341, listOne);
+            Badge bTwo = new Badge(2341, listTwo);
 
             _repo.AddBadge(bOne);
             _repo.AddBadge(bTwo);
