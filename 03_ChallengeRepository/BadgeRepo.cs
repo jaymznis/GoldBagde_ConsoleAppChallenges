@@ -40,10 +40,10 @@ namespace _03_ChallengeRepository
             return listOfBadges;
         }
 
-        public void AddDoorAccess(int badgeNum, DoorAccess door)
+        public void AddDoorAccess(int badgeNum, int door)
         {
             Badge badgeUpdate = GetByBadgeNum(badgeNum);
-            badgeUpdate.DoorAccess.Add(door); 
+            badgeUpdate.DoorAccess.Add((DoorAccess)door); 
         }
 
         public void RemoveDoorAccess(int badgeNum, DoorAccess door)
