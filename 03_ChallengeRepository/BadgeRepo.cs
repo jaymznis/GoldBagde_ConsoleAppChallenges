@@ -19,8 +19,13 @@ namespace _03_ChallengeRepository
             return wasAdded;
 
         }
+        
+        public void AddBadgeToDic(Badge badge)
+        {
+            _accessRepo.Add(badge.BadgeID, badge);
+        } 
 
-        public Dictionary<int, List<DoorAccess>> GetFullDictionary()
+        public Dictionary<int, Badge> GetFullDictionary()
             {
             return _accessRepo;
             }
@@ -28,9 +33,9 @@ namespace _03_ChallengeRepository
         {
             List<int> listOfBadges = new List<int>();
 
-            foreach (KeyValuePair<int, List<DoorAccess>> doors in _accessRepo)
+            foreach (KeyValuePair<int, Badge> badges in _accessRepo)
             {
-                listOfBadges.Add(doors.Key);
+                listOfBadges.Add(badges.Key);
             }
             return listOfBadges;
         }
@@ -38,7 +43,7 @@ namespace _03_ChallengeRepository
         public void AddDoorAccess(int badgeNum, DoorAccess door)
         {
             Badge badgeUpdate = GetByBadgeNum(badgeNum);
-            badgeUpdate.DoorAccess.Add(door);
+            badgeUpdate.DoorAccess.Add(door); 
         }
 
         public void RemoveDoorAccess(int badgeNum, DoorAccess door)
