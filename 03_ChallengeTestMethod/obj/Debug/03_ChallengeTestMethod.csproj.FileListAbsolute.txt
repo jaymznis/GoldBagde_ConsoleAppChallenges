@@ -1,0 +1,16 @@
+C:\Users\jaymz\OneDrive\Documents\ElevenFiftyProjects\GoldBadgeConsoleAppChallenges\03_ChallengeTestMethod\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\jaymz\OneDrive\Documents\ElevenFiftyProjects\GoldBadgeConsoleAppChallenges\03_ChallengeTestMethod\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\jaymz\OneDrive\Documents\ElevenFiftyProjects\GoldBadgeConsoleAppChallenges\03_ChallengeTestMethod\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\jaymz\OneDrive\Documents\ElevenFiftyProjects\GoldBadgeConsoleAppChallenges\03_ChallengeTestMethod\bin\Debug\03_ChallengeTestMethod.dll
+C:\Users\jaymz\OneDrive\Documents\ElevenFiftyProjects\GoldBadgeConsoleAppChallenges\03_ChallengeTestMethod\bin\Debug\03_ChallengeTestMethod.pdb
+C:\Users\jaymz\OneDrive\Documents\ElevenFiftyProjects\GoldBadgeConsoleAppChallenges\03_ChallengeTestMethod\bin\Debug\03_ChallengeRepository.dll
+C:\Users\jaymz\OneDrive\Documents\ElevenFiftyProjects\GoldBadgeConsoleAppChallenges\03_ChallengeTestMethod\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\jaymz\OneDrive\Documents\ElevenFiftyProjects\GoldBadgeConsoleAppChallenges\03_ChallengeTestMethod\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\jaymz\OneDrive\Documents\ElevenFiftyProjects\GoldBadgeConsoleAppChallenges\03_ChallengeTestMethod\bin\Debug\03_ChallengeRepository.pdb
+C:\Users\jaymz\OneDrive\Documents\ElevenFiftyProjects\GoldBadgeConsoleAppChallenges\03_ChallengeTestMethod\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\jaymz\OneDrive\Documents\ElevenFiftyProjects\GoldBadgeConsoleAppChallenges\03_ChallengeTestMethod\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\jaymz\OneDrive\Documents\ElevenFiftyProjects\GoldBadgeConsoleAppChallenges\03_ChallengeTestMethod\obj\Debug\03_ChallengeTestMethod.csprojAssemblyReference.cache
+C:\Users\jaymz\OneDrive\Documents\ElevenFiftyProjects\GoldBadgeConsoleAppChallenges\03_ChallengeTestMethod\obj\Debug\03_ChallengeTestMethod.csproj.CoreCompileInputs.cache
+C:\Users\jaymz\OneDrive\Documents\ElevenFiftyProjects\GoldBadgeConsoleAppChallenges\03_ChallengeTestMethod\obj\Debug\03_ChallengeTestMethod.csproj.CopyComplete
+C:\Users\jaymz\OneDrive\Documents\ElevenFiftyProjects\GoldBadgeConsoleAppChallenges\03_ChallengeTestMethod\obj\Debug\03_ChallengeTestMethod.dll
+C:\Users\jaymz\OneDrive\Documents\ElevenFiftyProjects\GoldBadgeConsoleAppChallenges\03_ChallengeTestMethod\obj\Debug\03_ChallengeTestMethod.pdb
