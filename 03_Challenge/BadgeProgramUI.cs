@@ -73,9 +73,57 @@ namespace _03_Challenge
             bool addMoreDoors = true;
             while (addMoreDoors)
             {
-                Console.WriteLine($"\n\t );
+                List<DoorAccess> doorList = new List<DoorAccess>();
+                Console.Clear();
+                Console.WriteLine($"\n\t Please choose a door to grant access\n" +
+                    $"\n\t\t1. A1\n" +
+                    $"\t\t2. A2\n" +
+                    $"\t\t3. A3\n" +
+                    $"\t\t4. A4\n" +
+                    $"\t\t5. B1\n" +
+                    $"\t\t6. B2\n" +
+                    $"\t\t7. B3\n" +
+                    $"\t\t8. B4\n" +
+                    $"\n\t # ");
+               int input = Convert.ToInt32(Console.ReadLine());
+                if (input <= 8 && input >= 1)
+                {
+                    doorList.Add((DoorAccess)input);
+                    Console.Write($"\n\t Would you like to add another door?\n" +
+                        $"\n\t\t y/n  ");
+                    string yN = Console.ReadLine();
+                    bool yesNo = true;
+                    while (yesNo)
+                    {
+                        switch (yN.ToLower())
+                        {
+                            case "y":
+                            case "yes":
+                                yesNo = false;
+                                break;
+                            case "n":
+                            case "no":
+                                yesNo = false;
+                                addMoreDoors = false;
+                                break;
+                            default:
+                                Console.WriteLine("\n\t Yes or No?");
+                                break;
+                        }
+                    }
+                    
+
+                }
+                else
+                {
+                    Console.WriteLine($"\n\t That is not a valid option. Please enter a number 1-8");
+                    Console.ReadLine();
+                    Console.Clear();
+                }
 }
         }
+
+        private void 
 
         private void UpdateBadge()
         {
