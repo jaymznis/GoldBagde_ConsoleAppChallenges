@@ -19,8 +19,28 @@ namespace _02_Challenge
         private void MenuAccess()
         {
             //make it username and password enabled?
-            Console.WriteLine("\n\tKomodo Claims Department Access");
-            Console.WriteLine("\n\tPress any Key to Continue");
+            Console.WriteLine(@"
+             _     _                      _                   
+            (_)   | |                    | |                  
+             _____| |___  ____   ___   __| | ___              
+            |  _   _) _ \|    \ / _ \ / _  |/ _ \             
+            | |  \ \ |_| | | | | |_| ( (_| | |_| |            
+            |_|   \_)___/|_|_|_|\___/ \____|\___/             
+                                                              
+               _______ _        _                             
+              (_______) |      (_)                            
+               _      | | _____ _ ____   ___                  
+              | |     | |(____ | |    \ /___)                 
+              | |_____| |/ ___ | | | | |___ |                 
+               \______)\_)_____|_|_|_|_(___/                  
+                                                              
+ ______                                                       
+(______)                           _                      _   
+ _     _ _____ ____  _____  ____ _| |_ ____  _____ ____ _| |_ 
+| |   | | ___ |  _ \(____ |/ ___|_   _)    \| ___ |  _ (_   _)
+| |__/ /| ____| |_| / ___ | |     | |_| | | | ____| | | || |_ 
+|_____/ |_____)  __/\_____|_|      \__)_|_|_|_____)_| |_| \__)");
+            Console.WriteLine("\n\t\t  Press any Key to Continue");
 
 
             bool keepRunning = true;

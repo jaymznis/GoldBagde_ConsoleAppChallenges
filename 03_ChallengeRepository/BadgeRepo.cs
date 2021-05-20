@@ -69,5 +69,30 @@ namespace _03_ChallengeRepository
             }
             return null;
         }
+
+        public bool DictContainsKey(int badgeID)
+        {
+            if (_accessRepo.ContainsKey(badgeID))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public int StringisInt(string input)
+        {
+            int.TryParse(input, out int num);
+            if (num != 0 )
+            {
+                return num;
+            }
+            else
+            {
+                return 0;
+            }
+
+        }
     }
 }
