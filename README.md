@@ -9,26 +9,41 @@ A collection of console apps that utilize Lists, Queues, and Dictionaries in C# 
 
 ## Installation
 
-Click on the green code button <img src="Code Download Button.jpg"> at the top right and select clone or download the zip file.  Although there are ways to run this project directly in the command prompt (cmd.exe), or other software, 
+Click on the green code button <br><img src="Code Download Button.jpg"><br> at the top right and select clone or download the zip file. <br> Although there are ways to run this project directly in the command prompt (cmd.exe), or other software, 
 it is easiest to use Visual Studio 2019 Community.  Download VS free [@here](https://visualstudio.microsoft.com/downloads/)<br />
 
 ## Console Apps
 This is a solution that inclues 3 different console apps and test methods. 
 Once you have Visual studio installed you can open the solution to see the different apps and how they were created.
-At the top of Visual studio you can choose between the 3 Challenges and hit run to see and use the different Apps.
+At the top of Visual studio you can choose between the 3 Challenges <br>and hit Start<br> <img src="startbutton.jpg"> <br>to see and use the different Apps.
 
 ## Sample Views
-<img src="Screenshot 2021-05-17 230051.png">
-<img src="https://github.com/Brian-1150/ReadMe_Example/blob/8f71dcaf6b6eabaae33abe23a7775beca824f7ee/Screenshot%202021-05-17%20230323.png">
+
+Challenge 1 uses a List to hold data for building and updateing a menu.
+<br>
+<img src="c1.jpg">
+<br>
+<br>
+Challenge 2 uses a Queue for insurance claims. It allows the user to access whatever claim was put in first.
+<br>
+<img src="c2.jpg">
+<br>
+<br>
+Challenge 3 uses a dictionary and Key Value Pairs in order to take a Badge and grant access to certain doors.
+<br>
+<img src="c3.jpg">
+<br>
+<br>
+
 
 ## Contributing
 To contribute to this project, follow the instructions for cloning, then commit your code or changes on a new branch.  Please be sure to include unit test before making a pull request.
 
 ## Resources
-Special thanks to [@Joshua Tucker](http://jtux.dev/) for the guided tutorial for this project.
+Special thanks the instructors at Eleven Fifty who helped walk me through issues when they arrived and helped me understand how to utilize C#.
 
 ## Contact
-Please reach out with any questions or suggestions.  <sd86@elevenfifty.org>
+Please reach out with any questions or suggestions.  <notrealinbox@gmail.com>
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
