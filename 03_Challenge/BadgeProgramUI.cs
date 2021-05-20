@@ -199,12 +199,14 @@ namespace _03_Challenge
                                 Console.WriteLine($"\n\t Badge #{badge.BadgeID} now has access to doors\n" +
                                     $"\n\t ");
                                 ShowDoors(badge);
-                                Console.Write($"\n\tWould you like to add another door?\n" +
-                                    $"\n\t y/n ");
-                                string inputThree = Console.ReadLine();
                                 bool yesNo = true;
                                 while (yesNo)
                                 {
+                                    Console.Write($"\n\tWould you like to add another door?\n" +
+                                    $"\n\t y/n ");
+                                string inputThree = Console.ReadLine();
+                               
+                               
                                     switch (inputThree)
                                     {
                                         case "y":

@@ -189,7 +189,7 @@ namespace _01_Challenge
             Console.Write("\n\tEnter the number of the Menu Item you would like to update:\n" +
                 "\n\t # ");
             int oldItem = Convert.ToInt32(Console.ReadLine());
-
+            Console.Clear();
             MenuItem newItem = new MenuItem();
             //number
             Console.Write("\n\tEnter Menu Number: # ");
@@ -225,7 +225,7 @@ namespace _01_Challenge
             Console.Clear();
             ShowMenuItemNameandNumber();
 
-            Console.WriteLine("\n\tEnter Menu number of the meal you would like to delete:\n" +
+            Console.Write("\n\tEnter Menu number of the meal you would like to delete:\n" +
                 "\n\t # ");
 
             int itemDelete = Convert.ToInt32(Console.ReadLine());
